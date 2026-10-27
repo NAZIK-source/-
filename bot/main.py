@@ -189,7 +189,7 @@ async def faq(m: Message):
 
 @router.message()
 async def fallback(m: Message):
-    await m.answer("Выберите пункт меню.", reply_markup=MENU)
+    await m.answer(GREETING, reply_markup=MENU)
 
 
 async def notify(request: web.Request) -> web.Response:
